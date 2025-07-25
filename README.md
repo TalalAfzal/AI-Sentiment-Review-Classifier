@@ -16,3 +16,20 @@ To build a sentiment analysis pipeline that:
 
 **Source**: Datafiniti Amazon Product Reviews  
 - Columns used: `reviews.text`, `reviews.rating`
+## 🛠️ Pipeline
+
+1. **Text Preprocessing**
+   - Lowercasing, punctuation removal, stopword filtering, lemmatization using NLTK
+
+2. **TF-IDF Vectorization**
+   - Transforms cleaned reviews into numeric feature vectors
+
+3. **Label Creation**
+   - Labels generated from review ratings:
+     - `>= 4` → positive
+     - `== 3` → neutral
+     - `<= 2` → negative
+
+4. **Model Training**
+   - **Naive Bayes**
+   - **Logistic Regression**
